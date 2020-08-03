@@ -1,0 +1,35 @@
+$font-size: 50px;
+$size-large: 100px;
+$center: center;
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: $center;
+  align-items: $center;
+
+  .button {
+    font-size: $font-size;
+    height: $size-large;
+    width: $size-large;
+    text-align: $center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .input {
+    height: $size-large;
+    text-align: $center;
+    font-size: $font-size;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
